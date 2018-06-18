@@ -1,19 +1,21 @@
 <?php 
 
 get_header();
-?> 
-<div class="main-blog">
-<?php
+
 if(have_posts()):
-    while (have_posts()) : the_post(); 
+    while (have_posts()) : the_post();
+    get_template_part('content', get_post_format());
 
-    ?>
 
-    <article class="post">
+    endwhile;
+?>
+<div class="single-blog">
+<article class="post-aside">
+    
         <div class="post-head">
-            <h2><a href="<?php the_permalink(); ?>" ><?php  the_title(); ?></a> </h2>
+            <h2><?php  the_title(); ?></h2>
         <div class="mobile-thumb">
-            <a href="<?php the_permalink(); ?>" >    <?php the_post_thumbnail(); ?></a>
+   <?php the_post_thumbnail(); ?>
         </div>
         
             <p class="post-info"> <?php the_time('F jS, Y'); ?> </p>
@@ -35,36 +37,22 @@ if(have_posts()):
             }
             
         ?>
-            <p><a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a></p>
+            <p><a href="<?php get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a></p>
             </p>
-        </div>
+        </div>    
+<?php the_content(); ?>
+</article>
 
+<a href="http://192.168.0.146:8888/wordpress/blog/" class="more-blogs"><p>More Blogs</p></a>
 
-        <div class="post-text">
-        <p>    
-            <?php echo get_the_excerpt(); ?>
-            <a href="<?php the_permalink(); ?>">Read More&raquo;</a>
-        </p>
-
-        </div>
-
-    </article>
-
-    <?php
-
-    endwhile;
+</div>
+<?php
 
     else :
-        echo '<div class="empty-blog">
-                <h1>Coming Soon! </h1>
-                </div>';
+        echo '<p>No content found </p>';
 
     endif;
-?>
-</div>
 
-
-<?php
 get_footer();
             
 ?>

@@ -97,7 +97,7 @@ Whether it is assisting with an existing project or starting one from scratch, B
      
     <div class="serv-text-right" id="strategies">
         <h2>Strategies</h2>
-        <p>We are here to help you develop strategies to grow your web presence. To make sure you have tangible benchmarks, while providing visitor analytics along the way! This helps foster a real discussion and decision making on long and short term strategies. There is no one right way to grow your web presence, we believe that being open to new ideas and tryin old ones again can help unlock the correct combination for success with your small business or non profit.  </p>
+        <p>We are here to help you develop strategies to grow your web presence. To make sure you have tangible benchmarks, while providing visitor analytics along the way! This helps foster a real discussion and decision making on long and short term strategies. There is no one right way to grow your web presence, we believe that being open to new ideas and tryin old ones again can help unlock the correct combination for success with your small business or non-profit.  </p>
     </div>
 
     <img src="https://birddogdevelopment.com/wp-content/themes/birdDogDev/img/services-strat.jpg" class="serv-img-left slide-in align-left ">
@@ -217,7 +217,7 @@ Not sure you want to dive all the way in and redesign your website but do want s
 
     
 
-        <p class="hidden-tip-button" style="grid-column: 1 / -1 ;"><a href="contact">Click Here to Reachout </a></p>       
+        <p class="hidden-tip-button" style="grid-column: 1 / -1 ;"><a href="contact">Click Here to Reach Out </a></p>       
     
 </div>
 
